@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #383e45;
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2%;
+  text-align: center;
+}
+
+
+/*-------------------------------------------
+Header
+-------------------------------------------*/
+header{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 9999; 
+  width: 100%;
+  background-color:white;
+}
+/*
+---------------------
+.h1wrapper {
+  max-width:1300px;
+  margin: 0 auto;
+}
+---------------------
+*/
+.site-title {
+  padding: 15px 2%;
+  text-align: left;
+  margin: 0 auto;
+}
+#header nav{
+  background-color: black;
+}  
+#header ul {
+  display: flex;
+  max-width:1300px;
+  margin: 0 auto;
+  padding:10px 2%;
+}
+#header li {
+  margin-right: 50px;
+}
+#header li a {
+  color: white;
+  font-size: 14px;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+#header li img.icon {
+  width: 20px;
+}
+#header ul{
+  overflow: auto;
+  white-space: nowrap;
+}
+#header li{
+  display: inline-block;
+}
+
+
+/*-------------------------------------------
+pickup-article
+-------------------------------------------*/
+#pickup-article {
+  margin-top:150px;
+  margin-bottom:50px;
+  display: flex;
+  justify-content: space-between;
+}
+.pickup{
+  width:32%;
+}
+.pickup h4{
+  text-align: left;
+  margin-bottom: 10px;
+}
+.pickup p{
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  #pickup-article{
+    flex-direction: column;
+  }
+  .pickup{
+    width: 100%;
+    margin-bottom:20px;
+  }
+  .pickup img{
+    object-fit: contain;
+    max-height: 400px;
+    padding:10px 5px;
+  }
+}
+
+/*-------------------------------------------
+Main
+-------------------------------------------*/
+#main{
+  display: flex;
+}
+#main #latest-articles{
+  width:65%;
+  margin-right:2%;
+}
+#main #rightside{
+  width:35%;
+}
+#latest-articles h2{
+  text-align: left;
+}
+#latest-articles ul{
+  display:flex;
+}
+#latest-articles li{
+  margin: 10px 30px 10px 0;
+}
+#latest-articles h3{
+  font-weight: normal;
+  margin:5px 40px 20px 40px;
+}
+#latest-articles p{
+  text-decoration: underline;
+  margin:5px 0 50px 0;
+}
+#rightside{
+  padding:0 2%;
+}
+#profile-pic{
+  width:130px;
+  border-radius: 50%;
+}
+#profile-text{
+  margin-bottom:50px;
+}
+#rightside h3{
+  margin:25px 0;
+}
+#rightside article{
+  margin-bottom:30px;
+}
+
+@media screen and (max-width: 600px){
+  #main{
+    display: flex;
+    flex-direction: column;
+  }
+  #main #latest-articles{
+    width:100%;
+    margin-right:0%;
+  }
+  #main #rightside{
+    width:100%;
+  }
+}
+
+
+/*-------------------------------------------
+Archive
+-------------------------------------------*/
+#News p{
+  margin-top:50px;
+  margin-bottom:30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#News dl{
+  border-top: 1px solid #383e45;
+}
+#News dt{
+  text-align: left;
+  padding: 20px 20px;
+  border-bottom: 1px solid #383e45;
+}
+
+
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  background-color:rgba(0, 0, 0, 0.038);
+  padding-top:50px;
+  margin-top:100px;
+}
+#footer h3{
+    padding: 10px 0 30px 0;
+}
+#footer-wrapper{
+  padding:0 2%;
+  display:flex;
+  justify-content:space-between;
+  text-align:left;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+#footer section{
+  width:30%;
+}
+#footer #about p{
+  font-size:13px;
+  padding-bottom: 20px;
+}
+#footer #about li{
+  list-style-position: inside;
+}
+#footer #about li::marker {
+  content: "▶";
+}
+#footer #menu ul{
+  border-top: 1px solid #383e45;
+}
+#footer #menu li{
+  padding:10px 0 10px 10px;
+  border-bottom: 1px solid #383e45;
+}
+#last{
+  text-align:center;
+  padding-top:50px
+}
+@media screen and (max-width: 600px){
+  #footer-wrapper{
+    flex-direction: column;
+  }
+  #footer section{
+    width:100%;
+    padding-bottom:30px;
+  }  
+}
